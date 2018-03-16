@@ -1,0 +1,4 @@
+To use reddit2lcd run the py script with this:
+watch -n 30 ./reddit2lcd.py
+
+It'll send the latest result from the reddit rss feed to the lcd so make sure the arduino is connected to the computer.

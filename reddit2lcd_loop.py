@@ -20,8 +20,6 @@ s = serial.Serial(
 # ---- Initialize array
 ary = []
 
-# ---- Add some spaces to the first and last positions in the array
-
 # ---- Character counters
 char_count1 = int("0")
 char_count2 = int("16")
@@ -34,16 +32,11 @@ while char_count2 < chars_int+6:
 	char_count1 = char_count1 + 2
 	char_count2 = char_count2 + 2
 
-#print ary
-#blah = "\n".join(ary)
-
 while loop_counter < 2:
 	for each_element in ary:
 		time.sleep(0.3)
 		s.write(each_element)
-#		time.sleep(0.3)
 	loop_counter = loop_counter + 1
-	print loop_counter
 	s.flushInput()
 	s.flushOutput()
 	time.sleep(1.5)
